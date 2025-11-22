@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  file_provider_paths.xml
+
+  This XML file defines the paths accessible to the FileProvider.
+  The FileProvider is used to securely share files with other applications,
+  such as the camera app for capturing photos and videos.
+
+  - <external-path name="photos" ...>: Specifies a path for photos.
+  - <external-path name="videos" ...>: Specifies a path for videos.
+
+  The `path` attribute indicates a sub-path within the external files directory
+  (context.getExternalFilesDir()).
+-->
 <paths>
     <external-path name="photos" path="Android/data/com.example.lab_week_11_b/files/Pictures" />
     <external-path name="videos" path="Android/data/com.example.lab_week_11_b/files/Movies" />

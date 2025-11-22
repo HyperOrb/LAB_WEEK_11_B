@@ -1,3 +1,15 @@
+/*
+ * FileHelper.kt
+ *
+ * This class provides utility functions related to file operations, particularly for generating
+ * URIs from files and retrieving standard Android media directories.
+ *
+ * Functions:
+ * - `getUriFromFile(file: File)`: Converts a `File` object into a content `Uri` using `FileProvider`.
+ *   This is essential for sharing file access with other apps securely.
+ * - `getPicturesFolder()`: Returns the standard directory name for pictures (`Environment.DIRECTORY_PICTURES`).
+ * - `getVideosFolder()`: Returns the standard directory name for videos (`Environment.DIRECTORY_MOVIES`).
+ */
 package com.example.lab_week_11_b
 import android.content.Context
 import android.net.Uri

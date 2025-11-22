@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  AndroidManifest.xml
+
+  This is the manifest file for your Android application. It declares essential information
+  about your app to the Android system.
+
+  Key additions/modifications:
+  - <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />:
+    Declares the permission to write to external storage. This is necessary for older Android versions
+    (API level 28 and below) when dealing with media files directly.
+  - <provider ...>:
+    Registers a FileProvider, which is crucial for securely sharing content URIs with camera/video capture intents.
+    - `android:authorities="${applicationId}.camera"`: Defines the authority for the FileProvider.
+    - `android:exported="false"`: Ensures the provider is not accessible to other apps directly, enhancing security.
+    - `android:grantUriPermissions="true"`: Allows temporary access to content URIs.
+    - <meta-data ...>: Links the FileProvider to the `file_provider_paths.xml` file, which specifies
+      the accessible file paths.
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 

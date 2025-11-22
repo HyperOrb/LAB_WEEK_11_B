@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  activity_main.xml
+
+  This layout file defines the user interface for the MainActivity.
+  It consists of a simple vertical LinearLayout containing two buttons:
+
+  - A "Photo" button (`@id/photo_button`): Used to trigger image capture.
+  - A "Video" button (`@id/video_button`): Used to trigger video capture.
+
+  The layout is centered on the screen.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"

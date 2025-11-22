@@ -1,3 +1,15 @@
+/*
+ * build.gradle
+ *
+ * This file configures the build system for the 'app' module.
+ *
+ * - Applied plugins: `com.android.application`, `org.jetbrains.kotlin.android`, `kotlin-kapt`.
+ * - Android configuration includes `namespace`, `compileSdk`, `defaultConfig` (with `applicationId`,
+ *   `minSdk`, `targetSdk`, `versionCode`, `versionName`), `buildTypes`, `compileOptions`, and `kotlinOptions`.
+ * - Dependencies include AndroidX core, lifecycle, appcompat, material, constraintlayout, activity-ktx,
+ *   JUnit for testing, and 'commons-io' for file operations.
+ * - Compose related configurations and dependencies have been removed as this is a View-based application.
+ */
 
 apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
